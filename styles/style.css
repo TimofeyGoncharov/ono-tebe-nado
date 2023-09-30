@@ -2,19 +2,17 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 49px 0 51px;
+    padding: 92px 47px 0 44px;
 }
 
 .header__menu {
-    width: 394px;
-    height: 28px;
-    flex-shrink: 0;
+    width: 403px;
 }
 
 .header__links-list {
     font-size: 18px;
     display: flex;
-    gap: 30px;
+    gap: 36px;
     list-style-type: circle;
     list-style-position: outside;
 }
@@ -57,6 +55,7 @@
     font-style: normal;
     line-height: 24.3px; 
     text-underline-position: under;
+    max-width: 240px;
 }
 
 .cover {
@@ -100,7 +99,7 @@
 }
 
 .aligned-text_center {
-    line-height: 100px;
+    line-height: 94px;
     justify-content: center;
 }
 
@@ -109,24 +108,26 @@
     justify-content: end;
 }
 
-.letter-spacing-extended {
-    letter-spacing: 0.3em;
-}
 
 .no-letter-spacing {
     letter-spacing: 30px;
 }
 
 .cover__description {
-    gap: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 54px;
+    z-index: 1;
+    gap: 82px;
 }
 
 .cover__description-text {
-    margin-top: 80px;
+    margin-top: 82px;
     line-height: 28px;
     word-spacing: 17px;
     font-size: 22px;
-    word-spacing: 27px;
 }
 
 .aligned-text:first-child {
@@ -142,44 +143,22 @@
     letter-spacing: 60px;
 }
 
-.aligned-text_center {
-    text-align: center;
-    letter-spacing: 60px;
-}
-
-.aligned-text_right {
-    text-align: right;
-    letter-spacing: 30px;
-}
-
-.cover__description {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    align-items: center;
-    margin-top: 147px;
-    margin-bottom: 62px;
-    z-index: 2;
-
-}
-
 .bet-button {
     border: 1px solid #FFF;
     width: 257px;
     height: 52px;
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 22px;
     text-transform: uppercase;
-    background-color: rgba(0,0,0,0);
-    margin-top: 70px;
+    background-color: transparent;
+    margin-top: 76px;
+    cursor: pointer;
 }
 
 
 .lots {
-    padding: 180px 50px 0 50px;
+    padding: 82px 50px 0 50px;
     display: grid;
     justify-content: center;
   }
@@ -220,15 +199,15 @@
     /* padding: 50px 40px 50px 40px; */
   }
   .card_type_film {
-    background-image: url(/images/card-lot-01.jpg);
+    background-image: url(../images/card-lot-01.jpg);
   }
   
   .card_type_book {
-    background-image: url(/images/card-lot-02.jpg);
+    background-image: url(../images/card-lot-02.jpg);
   }
   
   .card_type_picture {
-    background-image: url(/images/card-lot-03.jpg);
+    background-image: url(../images/card-lot-03.jpg);
   }
   
   .card__title {
@@ -265,9 +244,8 @@
   
   .about__column {
     display: grid;
-    /* grid-template-columns: 445px 885px; */
     grid-template-columns: 1fr 2fr;
-    column-gap: 25px;
+    column-gap: 10px;
   }
   
   .about__logo {
@@ -290,19 +268,19 @@
   
   .about__text {
     grid-column: 2/3;
-    font-size: 20px;
+    
   }
   
-  .about__text p:first-child {
+  .about__text p {
     margin-bottom: 25px;
+    font-size: 20px;
   }
 
   .footer {
-    padding: 180px 50px 90px 50px;
+    padding: 154px 50px 90px 50px;
     display: flex;
     font-size: 18px;
     justify-content: space-between;
-    margin: auto;
   }
      
   .footer__address {
@@ -310,8 +288,7 @@
     }
   
   .footer__menu {
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
   
   .footer__menu-link_active {
@@ -331,31 +308,15 @@
    
   
   .footer__social-link {
-    min-height: 48px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 40px;
+    gap: 48px;
    }
    
   .footer__social-list-item {
     list-style: none;
     display: flex;
   }
-  .footer__social-icon_youtube {
-    background-image: url('../images/yt.svg');
-  }
-  
-  .footer__social-icon_vk {
-    background-image: url('../images/vk.svg');
-  }
-  
-  .footer__social-icon_pinterest {
-    background-image: url('../images/pinterest.svg');
-  
-  }
-  
+
   .footer__social-icon_saiz {
     width: 48px;
     height: 48px;
